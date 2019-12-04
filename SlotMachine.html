@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <script src="SlotMachine.js"></script>
+  <title>Slot Machine</title>
+  <link rel="shortcut icon" href="SlotMachine.png" />
+
+
+<link href="SlotMachine.css" type="text/css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Signika&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+  <div id="container">
+    <button id="machine" type="button" onclick="generate()"><img src="SlotMachine.png" alt="Slot Machine" title="Slot Machine"
+    width="650px" height="650px"/></button>
+    <ul id="nums">
+      <li id="[0]">0</li>
+      <li id="[1]">0</li>
+      <li id="[2]">0</li>
+    </ul>
+  </div>
+  <h1 id="wins">Wins: 0</h1>
+  <h1 id="money">Money: 1000</h1>
+  <h1 id="cost">Cost: 5</h1>
+  <h1 id="bank">Bank: 0</h1>
+  <h3 id="profit">Profit: 0</h3>
+  <h3 id="low">Low: 0</h3>
+  <h3 id="high">High: 0</h3>
+
+
+</br>
+<button id="gen" type="button" onclick="fromBank(money, bank)">Take Money From Bank</button>
+<h3>Auto Generate</h3>
+<button id="gen" type="button" onclick="autoGen()">Start</button>
+<button id="gen" type="button" onclick="stopGen()">Stop</button>
+</br>
+</br>
+</br>
+<button type="button" onclick="reset()">Click to Reset</button>
+
+</body>
+</html>
